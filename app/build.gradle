@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion BUILD_TOOLS_VERSION
+    compileSdkVersion 26
+    buildToolsVersion "26.0.1"
 
     defaultConfig {
         applicationId "com.anttek.foreground.sample"
         minSdkVersion 14
-        targetSdkVersion 23
+        targetSdkVersion 26
         versionCode 1
         versionName "1.0"
     }
@@ -24,6 +24,6 @@ repositories {
     }
 }
 dependencies {
-    compile 'com.anttek.foreground.widget:library:1.0.2@aar'
-//    compile project(':library')
+//    compile 'com.anttek.foreground.widget:library:1.1.0@aar'
+    compile project(':library')
 }
